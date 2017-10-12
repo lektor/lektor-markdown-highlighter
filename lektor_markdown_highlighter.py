@@ -13,7 +13,7 @@ class MarkdownHighlighterPlugin(Plugin):
     description = 'Adds syntax highlighting for markdown blocks.'
 
     def get_formatter(self):
-        return HtmlFormatter(style=self.get_style())
+        return HtmlFormatter(style=self.get_style(), cssclass="hll")
 
     def get_style(self):
         return self.get_config().get('pygments.style', 'default')
