@@ -6,7 +6,7 @@ setup(
     author='Armin Ronacher',
     author_email='armin.ronacher@active-4.com',
     url='http://github.com/lektor/lektor-markdown-highlighter',
-    version='0.1',
+    version='0.2',
     license='BSD',
     py_modules=['lektor_markdown_highlighter'],
     entry_points={
