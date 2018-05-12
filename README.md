@@ -7,8 +7,8 @@ Lektor's markdown support.
 
 To enable the plugin run this command:
 
-```ini
-$ lektor plugins add markdown-highlighter
+```shell
+lektor plugins add markdown-highlighter
 ```
 
 ## Configuring the Plugin
@@ -31,7 +31,7 @@ To use the syntax highlighter you need to use fenced blocks and pass the name
 of the pygments lexer after the opening fence:
 
     ```python
-    print "Hello World!"
+    print("Hello World!")
     ```
 
 ## In Templates
