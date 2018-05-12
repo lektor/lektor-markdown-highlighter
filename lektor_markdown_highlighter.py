@@ -10,7 +10,7 @@ from markupsafe import Markup
 
 class MarkdownHighlighterPlugin(Plugin):
     name = 'Markdown Highlighter'
-    description = 'Adds syntax highlighting for markdown blocks.'
+    description = 'Lektor plugin that adds syntax highlighting for markdown blocks with Pygments.'
 
     def get_formatter(self):
         return HtmlFormatter(style=self.get_style(), cssclass="hll")
