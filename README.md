@@ -25,6 +25,8 @@ style = tango
 You can use this to select any of the built-in Pygments styles.  Support for
 custom styles will come in the future.
 
+The config file is considered the "source" for the Pygments stylesheet, so you must create the configuration file (it can be empty) or Lektor's build will prune `pygments.css`.
+
 ## In Markdown
 
 To use the syntax highlighter you need to use fenced blocks and pass the name
