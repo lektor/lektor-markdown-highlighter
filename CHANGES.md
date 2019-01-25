@@ -1,7 +1,8 @@
 Changelog
 =========
 
-These are all the changes in Lektor since the first public release.
+These are all the changes in Lektor Markdown Highlighter
+since the first public release.
 
 0.3.1
 
