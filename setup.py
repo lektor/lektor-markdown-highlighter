@@ -24,7 +24,7 @@ setup(
     name='lektor-markdown-highlighter',
     py_modules=['lektor_markdown_highlighter'],
     url='http://github.com/lektor/lektor-markdown-highlighter',
-    version='0.3',
+    version='0.3.1',
     classifiers=[
         'Environment :: Plugins',
         'Environment :: Web Environment',
