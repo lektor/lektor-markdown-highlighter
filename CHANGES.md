@@ -4,6 +4,12 @@ Changelog
 These are all the changes in Lektor Markdown Highlighter
 since the first public release.
 
+0.3.2
+
+Release date 29th of April, 2022
+
+- Gain compatibility with mistune 2.
+
 0.3.1
 
 Release date 25th of January, 2019

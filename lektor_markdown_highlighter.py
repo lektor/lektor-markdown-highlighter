@@ -25,7 +25,7 @@ class MarkdownHighlighterPlugin(Plugin):
 
     def on_markdown_config(self, config, **extra):
         class HighlightMixin(object):
-            def block_code(ren, text, lang):
+            def block_code(ren, text, lang=None):
                 if not lang:
                     return super(HighlightMixin, ren).block_code(text, lang)
                 return self.highlight_code(text, lang)
