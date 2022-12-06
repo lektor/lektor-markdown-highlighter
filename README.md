@@ -15,15 +15,26 @@ lektor plugins add markdown-highlighter
 
 The plugin has a config file that is used to configure a few things
 for Pygments.  Just create a file named `markdown-highlighter.ini` into your
-`configs/` folder.  Currently only `pygments.style` is used:
+`configs/` folder.
+
+You can use `pygments.style` to select any of the built-in Pygments styles:
 
 ```ini
 [pygments]
 style = tango
 ```
 
-You can use this to select any of the built-in Pygments styles.  Support for
-custom styles will come in the future.
+Support for custom styles will come in the future.
+
+You can also use `pygments.cssclass` to apply a custom CSS class
+to the generated html and CSS:
+
+```ini
+[pygments]
+cssclass = mycode
+```
+
+By default the plugin will use `highlight` for the CSS class.
 
 The config file is considered the "source" for the Pygments stylesheet, so you must create the configuration file (it can be empty) or Lektor's build will prune `pygments.css`.
 
