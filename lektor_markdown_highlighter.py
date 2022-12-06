@@ -13,7 +13,7 @@ class MarkdownHighlighterPlugin(Plugin):
     description = 'Lektor plugin that adds syntax highlighting for markdown blocks with Pygments.'
 
     def get_formatter(self):
-        return HtmlFormatter(style=self.get_style(), cssclass="hll")
+        return HtmlFormatter(style=self.get_style())
 
     def get_style(self):
         return self.get_config().get('pygments.style', 'default')
@@ -38,7 +38,7 @@ class MarkdownHighlighterPlugin(Plugin):
                 self.config_filename])
             def build_stylesheet(artifact):
                 with artifact.open('w') as f:
-                    f.write(self.get_formatter().get_style_defs())
+                    f.write(self.get_formatter().get_style_defs(".highlight"))
             return artifact_name
 
         def pygmentize(text, lang):
